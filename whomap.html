@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMKAW - Localização</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu2">
+            <div class="logo-img">
+                <img class="gymKAW" src="./icons/GymKAW-logo.svg" alt="">
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <nav class="menu-container">
+                <ul class="menu">
+                    <li><a class="font-2-btn" href="./">Inicio</a></li>
+                    <li><a class="font-2-btn" href="./plans.html">Nossos Planos</a></li>
+                    <li><a class="font-2-btn" href="./calculeIMC.html">Calcule seu IMC</a></li>
+                    <li><a class="font-2-btn" href="./whomap.html">Onde Ficamos?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="localizacao-txt  fadeInDown" data-anime="300">
+            <h2 class="font-TitleAll">FICAMOS LOCALIZADO <span class="txtYellow">AQUI</span></h2>
+            <p class="font-TextMedio">Veja quais locais estamos localizados <span class="txtYellow">localizados</span>
+            </p>
+        </div>
+
+        <section class="localizacao  fadeInLeft" data-anime="400">
+            <div class="localizacao-container">
+                <img src="./img/sp.jpg" alt="">
+                <p class="font-TextMedio">Rua XXXX, Numero 09 <br> NaoSei, Sao Paulo - SP</p>
+            </div>
+        </section>
+
+        <section class="interesse">
+
+            <div class="interesse-container fadeInLeft" data-anime="300">
+                <h2 class="font-TitleAll">SE INTERESSOU? SE INSCREVA AQUI!</h2>
+                <p class="font-TextMedio">Retornaremos o contato via <span class="txtYellow">Email</span> ou <span
+                        class="txtYellow">Whatsapp</span>
+                </p>
+
+                <div class="interesse-form fadeInLeft" data-anime="400">
+                    <div class="msg"></div>
+                    <label class="font-TextMedio" for="name">Nome completo</label>
+                    <input type="text" name="name" id="name" placeholder="Nome completo" required>
+
+                    <label class="font-TextMedio" for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+
+                    <label class="font-TextMedio" for="birthday">Data de Nascimento</label>
+                    <input type="date" name="birthday" id="birthday" placeholder="DD/MM/YYYY">
+
+                    <label class="font-TextMedio" for="tel">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="00 0 0000-0000">
+
+                    <label class="font-TextMedio" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="seuemail@email.com" required>
+
+                </div>
+                <div class="btnInscdiv fadeInDown" data-anime="500">
+                    <a class="btnInsrevase font-2-btn" href="">COMECE AGORA</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="logoandimg">
+                    <img src="./icons/GymKAW-logo.svg" alt="">
+                    <p>CNPJ: 00.000.000/0000-00</p>
+                    <p>Telefone: 71 00000-0000</p>
+                    <p>Site desenvolvido apenas para estudo :D</p>
+                </div>
+                <div class="cont-help">
+                    <p><a href="#">Quais nossos planos?</a></p>
+                    <p><a href="#">Termos de uso</a></p>
+                    <p><a href="#">Suporte</a></p>
+                </div>
+                <div class="cont-help">
+                    <p><a href="#">Quais nossos planos?</a></p>
+                    <p><a href="#">Termos de uso</a></p>
+                    <p><a href="#">Suporte</a></p>
+                </div>
+                <div class="cont-help">
+                    <p><a href="#">Quais nossos planos?</a></p>
+                    <p><a href="#">Termos de uso</a></p>
+                    <p><a href="#">Suporte</a></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

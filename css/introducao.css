@@ -1,0 +1,123 @@
+.introducao-container {
+    background-image: url('/img/ftprincipal-sven-mieke-MsCgmHuirDo-unsplash.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.conteudo-intro {
+    color: white;
+}
+.introducao-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 60px 0px 25px 60px;
+}
+.conteudo-intro{
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.btns {
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+.btns div a {
+    text-decoration: none;
+}
+.botaoComece {
+    padding: 20px;
+    background-color: var(--cor-y1);
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s;
+    border: 2px solid var(--cor-y1);
+    text-align: center;
+}
+.botaoComece a{
+    font-family: "Rubik";
+    font-weight: 400;
+    color: black;
+}
+.botaoComece:hover {
+    background-color: var(--cor-y2);
+}
+.botaoVantagens{
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid var(--cor-y1);
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s;
+    text-align: center;
+}
+.botaoVantagens a {
+    color: white;
+    font-family: "Rubik";
+    font-weight: 400;
+}
+.botaoVantagens:hover {
+    background-color: var(--cor-y1);
+}
+.botaoVantagens:hover {
+    color: black;
+}
+
+/* MOBILE */
+@media (min-width: 1400px){
+    .introducao-container{
+        grid-template-columns: 1fr 600px;
+        padding: 0px;
+        align-items: center;
+    }
+    .conteudo-intro h1 {
+        font-size: 5rem;
+    }
+    .botaoComece a, .botaoVantagens a {
+        font-size: 1.2rem;
+    }
+    .introducao-container {
+        padding: 70px;
+        flex-wrap: wrap;
+    }
+    .btns {
+        padding-top: 70px;
+        gap: 70px;
+    }
+    .botaoVantagens, .botaoComece {
+        padding: 40px;
+    }
+}
+@media (max-width: 850px) {
+    .font-TitleAll {
+        font-size: 3rem;
+    }
+    .btns {
+        display: flex;
+        align-items: flex-start;
+    }
+    .botaoVantagens, .botaoComece {
+        padding: 14px;
+    }
+}
+@media (max-width: 450px) {
+    .introducao-container {
+        padding: 22px;
+        display: flex;
+    }
+    .btns {
+        padding-top: 100px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 299px) {
+    .conteudo-intro h1 {
+        font-size: 2rem;
+    }
+    .botaoVantagens, .botaoComece{
+        padding-top: 7px;
+    }
+}

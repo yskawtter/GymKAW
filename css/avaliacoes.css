@@ -1,0 +1,39 @@
+.avaliacoes {
+    padding-bottom: 32px;
+}
+.avaliacoes-txt {
+    padding: 42px 22px 20px 72px;
+}
+.avaliacoes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: auto;
+    box-sizing: border-box;
+    max-width: 1400px;
+    border-radius: 4px;
+    text-align: center;
+}
+.avaliacoes-people {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--cor-5);
+}
+.avaliacoes-people span {
+    font-style: italic;
+}
+@media (max-width: 1000px) {
+    .avaliacoes-txt {
+        font-size: 1.3rem;
+        padding: 22px;
+    }
+}

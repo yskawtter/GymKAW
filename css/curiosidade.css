@@ -1,0 +1,62 @@
+
+.curiosidade-container{
+    background-color: var(--cor-1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 42px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.img-sabia {
+    width: 70%;
+    border-radius: 37px 247px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.texto-curiosidade-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.texto-curiosidade-cont h3 {
+    color: var(--cor-7);
+    text-transform: uppercase;
+}
+.texto-curiosidade-cont p {
+    color: var(--cor-7);
+}
+.texto-curiosidade-cont span {
+    color: var(--cor-6);
+}
+/*MOBILE*/
+@media(min-width: 1600px) {
+    .img-sabia {
+        width: 400px;
+    }
+}
+@media (max-width: 1000px) {
+    .img-sabia {
+        width: 300px;
+        border-radius: 17px 177px;
+    }
+}
+@media (max-width: 800px) {
+    .curiosidade-container {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+    .texto-curiosidade-cont h3 {
+        font-size: 2rem;
+        padding-top: 22px;
+    }
+    .texto-curiosidade-cont p {
+        font-size: 0.85rem;
+    }
+    .img-sabia {
+        max-width: 100%;
+        border-radius: 12px 42px;
+    }
+}

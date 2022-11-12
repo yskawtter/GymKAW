@@ -1,0 +1,160 @@
+.imc-txt {
+    padding: 42px 22px 20px 72px;
+}
+.imc-container {
+    background-color: var(--cor-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+.imc-radio {
+    /* position: absolute;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 72px;
+    padding-top: 42px;
+    text-transform: uppercase; 
+}
+input[type="radio"] {
+    display: none;
+}
+.imc-radio label {
+    /* position: relative; */
+    color: var(--cor-b2);
+    background-color: var(--cor-b1);
+    font-family: "Hind Siliguri";
+    font-size: 1.2rem;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+.imc-radio .feminino {
+    background-color: var(--cor-p1) !important;
+    color: var(--cor-p2) !important;
+}
+.imc-radio label::before {
+    content: "";
+    height: 12px;
+    width: 12px;
+    border: 3px solid var(--cor-5);
+    border-radius: 50%;
+    margin-right: 20px;  
+}
+
+
+/* input[type="radio"]:checked + .feminino{
+    background-color: red;
+}*/
+
+input[type="radio"]:checked + label::before {
+    height: 12px;
+    width: 12px;
+    border: 10px solid var(--cor-b2);
+    background-color: var(--cor-b1);
+}
+input[type="radio"]:checked + .feminino::before {
+    height: 12px;
+    width: 12px;
+    border: 10px solid var(--cor-p2);
+    background-color: var(--cor-p1);
+}
+
+.imc-container {
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+
+/*IMC JS*/ 
+
+.imc-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-2);
+}
+.imc-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-4);
+}
+
+/*MENU EMBAIXO*/
+
+.imc-questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+.imc-questions input {
+    width: 460px;
+    height: 60px;
+    font-size: 1.6rem;
+    padding: 10px;
+    background-color: var(--cor-6);
+    border: 2px solid var(--cor7);
+}
+#btnCalc {
+    margin: 22px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cor-y1);
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .imc-txt h2 {
+        font-size: 3rem;
+    }
+    .imc-txt p {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 800px) {
+    .imc-txt {
+        padding: 22px;
+    }
+    .imc-txt h2 {
+        font-size: 1.7rem;
+    }
+    .imc-txt p {
+        font-size: 1rem;
+    }
+    #btnCalc {
+        margin: 10px;
+        padding: 10px 20px;
+    }
+    .imc-questions input {
+        width: 300px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+    .imc-radio label {
+        padding: 20px;
+    }
+}
+@media (max-width: 350px) {
+    .imc-radio{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+        gap: 20px;
+    }
+    
+}

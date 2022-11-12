@@ -1,0 +1,25 @@
+@import url("./global.css");
+
+/*ESTILO*/
+@import url("./collor.css");
+@import url("./tipografia.css");
+
+@import url('./animacao.css');
+
+/*PAGINA PRINCIPAL*/
+@import url("./header.css");
+@import url("./introducao.css");
+@import url("./escolha.css");
+@import url("./sometips.css");
+@import url("./curiosidade.css");
+@import url("./footer.css");
+
+/*PAGINA PLANOS*/
+@import url("./plans.css");
+@import url("./vantagens.css");
+@import url("./avaliacoes.css");
+
+/*IMC*/
+@import url("./IMCcalcule.css");
+
+@import url("./ondeestamos.css")

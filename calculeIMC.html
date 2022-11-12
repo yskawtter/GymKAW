@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMKAW - IMC</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu2">
+            <div class="logo-img">
+                <img class="gymKAW" src="./icons/GymKAW-logo.svg" alt="">
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <nav class="menu-container">
+                <ul class="menu">
+                    <li><a class="font-2-btn" href="./">Inicio</a></li>
+                    <li><a class="font-2-btn" href="./plans.html">Nossos Planos</a></li>
+                    <li><a class="font-2-btn" href="./calculeIMC.html">Calcule seu IMC</a></li>
+                    <li><a class="font-2-btn" href="./whomap.html">Onde Ficamos?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="imc-txt fadeInDown" data-anime="300">
+            <h2 class="font-TitleAll">CALCULE SEU IMC</h2>
+            <p class="font-TextMedio">Calcule aqui seu <span class="txtYellow">Indice de Mascara Corporal (IMC)</span> e
+                veja quais exercicios
+                você deve fazer para aumentar ou diminuir</p>
+        </div>
+
+
+
+        <section class="imc  ">
+            <div class="imc-container fadeInUp" data-anime="400">
+                <p class="font-TextMedio">Seu sexo é:</p>
+                <div class="imc-radio">
+                    <span></span>
+
+                    <input value="Masculino" type="radio" name="sexo" id="masculino">
+                    <label for="masculino">Masculino</label>
+
+                    <input value="Feminino" type="radio" name="sexo" id="feminino">
+                    <label class="feminino" for="feminino">Feminino</label>
+                </div>
+
+                <div class="imc-questions">
+                    <span></span>
+
+                    <label class="font-TextMedio" for="altura">Altura</label>
+                    <input type="number" name="altura" id="altura" placeholder="Centimetros (ex: 155)">
+
+                    <label class="font-TextMedio" for="peso">Peso</label>
+                    <input type="number" name="peso" id="peso" placeholder="Em Kg/s (ex: 50)">
+                </div>
+                <button class="font-2-btn " id="btnCalc">Calcule aqui</button>
+
+                <div class="imc-info">
+                    <p class="font-vtgs activeIMC"></p>
+                    <!--JAVA SCRIPT AQUI-->
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="logoandimg">
+                    <img src="./icons/GymKAW-logo.svg" alt="">
+                    <p>CNPJ: 00.000.000/0000-00</p>
+                    <p>Telefone: 71 00000-0000</p>
+                    <p>Site desenvolvido apenas para estudo :D</p>
+                </div>
+                <div class="cont-help">
+                    <p><a href="#">Quais nossos planos?</a></p>
+                    <p><a href="#">Termos de uso</a></p>
+                    <p><a href="#">Suporte</a></p>
+                </div>
+                <div class="cont-help">
+                    <p><a href="#">Quais nossos planos?</a></p>
+                    <p><a href="#">Termos de uso</a></p>
+                    <p><a href="#">Suporte</a></p>
+                </div>
+                <div class="cont-help">
+                    <p><a href="#">Quais nossos planos?</a></p>
+                    <p><a href="#">Termos de uso</a></p>
+                    <p><a href="#">Suporte</a></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
